@@ -3,7 +3,7 @@ name: weread sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 1"
+    - cron: "0 0 1 * *" #分别对应：分钟、小时、日期、月份、星期
 jobs:
   sync:
     name: Sync
